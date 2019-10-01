@@ -5,16 +5,15 @@
  */
 package ch.makery.controller.Interface;
 
-import java.util.List;
-import ch.makery.model.Person;
+import ch.makery.MainApp;
 
-public interface IBirthdayStatisticsController {
+public interface IRootLayoutController {
 
     /**
-     * Sets the persons to show the statistics for.
+     * Is called by the main application to give a reference back to itself.
      *
-     * @param persons
+     * @param mainApp
      */
-    void setPersonData(List<Person> persons);
+    void setMainApp(MainApp mainApp);
     
 }
