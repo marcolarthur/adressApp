@@ -5,7 +5,11 @@
  */
 package ch.makery.model.Interface;
 
-public interface ICommand {
+import java.util.List;
+import ch.makery.model.Person;
+
+public interface IPersonListWrapper {
     
-    void execute();
+    public List<Person> getPersons();
+    public void setPersons(List<Person> persons);
 }
